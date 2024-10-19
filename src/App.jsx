@@ -36,8 +36,6 @@ function App() {
 
   let content;
 
-  console.log(projectsState);
-
   if (projectsState.selectedProjectId === null) {
     content = <NewProject onAdd={handleAddProject} />;
   } else if (projectsState.selectedProjectId === undefined) {
